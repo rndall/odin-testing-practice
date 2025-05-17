@@ -9,3 +9,5 @@ test("number: capitalize 123 to 123", () =>
   expect(capitalize("123")).toBe("123"))
 test("capitalize 23a  x Ar3 to 23a  X Ar3", () =>
   expect(capitalize("23a  x Ar3")).toBe("23a  X Ar3"))
+test("special char: capitalize add-on to Add-on", () =>
+  expect(capitalize("add-on")).toBe("Add-on"))
