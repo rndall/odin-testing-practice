@@ -1,6 +1,5 @@
 function reverseString(string) {
-  if (string === "abc") return "cba"
-  return "ba"
+  return string.split("").reverse().join("")
 }
 
 module.exports = reverseString
