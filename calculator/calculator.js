@@ -9,6 +9,7 @@ const calculator = {
     return num1 * num2
   },
   divide(num1, num2) {
+    if (num2 === 0) return undefined
     return num1 / num2
   },
 }
