@@ -27,4 +27,6 @@ describe("calculator", () => {
   test("two times two is four", () => expect(calculator.multiply(2, 2)).toBe(4))
   test("three times two is six", () =>
     expect(calculator.multiply(3, 2)).toBe(6))
+  test("negtaive three times negative two is six", () =>
+    expect(calculator.multiply(-3, -2)).toBe(6))
 })
