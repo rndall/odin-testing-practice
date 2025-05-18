@@ -29,4 +29,7 @@ describe("calculator", () => {
     expect(calculator.multiply(3, 2)).toBe(6))
   test("negtaive three times negative two is six", () =>
     expect(calculator.multiply(-3, -2)).toBe(6))
+
+  test("two divided by two is one", () =>
+    expect(calculator.divide(2, 2)).toBe(1))
 })
