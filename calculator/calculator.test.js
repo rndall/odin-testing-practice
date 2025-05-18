@@ -32,4 +32,6 @@ describe("calculator", () => {
 
   test("two divided by two is one", () =>
     expect(calculator.divide(2, 2)).toBe(1))
+  test("five divided by two is 2.5", () =>
+    expect(calculator.divide(5, 2)).toBe(2.5))
 })
