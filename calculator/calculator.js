@@ -8,8 +8,8 @@ const calculator = {
   multiply(num1, num2) {
     return num1 * num2
   },
-  divide() {
-    return 1
+  divide(num1, num2) {
+    return num1 / num2
   },
 }
 
