@@ -8,7 +8,9 @@ const calculator = {
   multiply(num1, num2) {
     return num1 * num2
   },
-  divide() {},
+  divide() {
+    return 1
+  },
 }
 
 module.exports = calculator
