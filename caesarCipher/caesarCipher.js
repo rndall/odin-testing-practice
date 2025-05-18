@@ -1,7 +1,12 @@
 const caesarCipher = (string, shift) => {
-  const code = string.charCodeAt()
-  const shiftedCode = code + shift
-  const cipheredString = String.fromCharCode(shiftedCode)
+  let cipheredString = ""
+
+  for (const char of string) {
+    const code = char.charCodeAt()
+    const shiftedCode = code + shift
+    cipheredString += String.fromCharCode(shiftedCode)
+  }
+
   return cipheredString
 }
 
