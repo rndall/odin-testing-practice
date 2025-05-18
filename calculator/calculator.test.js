@@ -37,4 +37,5 @@ describe("calculator", () => {
   test("floating number result", () =>
     expect(calculator.divide(10, 3)).toBeCloseTo(3.3333))
   test("divide zero", () => expect(calculator.divide(0, 3)).toBe(0))
+  test("divide by zero", () => expect(calculator.divide(3, 0)).toBeUndefined())
 })
