@@ -15,4 +15,6 @@ describe("calculator", () => {
 
   test("two plus two is four", () => expect(calculator.add(2, 2)).toBe(4))
   test("one plus two is three", () => expect(calculator.add(1, 2)).toBe(3))
+  test("negative 3 plus two is negative one", () =>
+    expect(calculator.add(-3, 2)).toBe(-1))
 })
