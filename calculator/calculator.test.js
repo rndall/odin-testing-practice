@@ -12,4 +12,6 @@ describe("calculator", () => {
     expect(calculator.multiply).toBeDefined())
   test("divide function is defined", () =>
     expect(calculator.divide).toBeDefined())
+
+  test("two plus two is four", () => expect(calculator.add(2, 2)).toBe(4))
 })
