@@ -34,4 +34,6 @@ describe("calculator", () => {
     expect(calculator.divide(2, 2)).toBe(1))
   test("five divided by two is 2.5", () =>
     expect(calculator.divide(5, 2)).toBe(2.5))
+  test("floating number result", () =>
+    expect(calculator.divide(10, 3)).toBeCloseTo(3.3333))
 })
