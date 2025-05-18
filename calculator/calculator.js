@@ -5,8 +5,8 @@ const calculator = {
   subtract(num1, num2) {
     return num1 - num2
   },
-  multiply() {
-    return 4
+  multiply(num1, num2) {
+    return num1 * num2
   },
   divide() {},
 }
