@@ -14,4 +14,5 @@ describe("calculator", () => {
     expect(calculator.divide).toBeDefined())
 
   test("two plus two is four", () => expect(calculator.add(2, 2)).toBe(4))
+  test("one plus two is three", () => expect(calculator.add(1, 2)).toBe(3))
 })
