@@ -7,5 +7,10 @@ describe("analyzeArray", () => {
     expect(analyzeArray(array)).toEqual({
       average: 4,
     })
+
+    array = [5, 5, 9, 7, 1, 2]
+
+    const result = analyzeArray(array)
+    expect(result.average).toBeCloseTo(4.8333)
   })
 })
