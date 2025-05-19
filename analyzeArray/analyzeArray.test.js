@@ -8,7 +8,7 @@ describe("analyzeArray", () => {
     expect(result.average).toBe(4)
 
     const { average, ...withoutAverage } = result
-    expect(withoutAverage).toEqual({ min: 1 })
+    expect(withoutAverage).toEqual({ min: 1, max: 8 })
 
     array = [5, 5, 9, 7, 1, 2]
 
