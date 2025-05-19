@@ -3,7 +3,8 @@ const caesarCipher = (string, shift) => {
 
   for (const char of string) {
     const code = char.charCodeAt()
-    const shiftedCode = code + shift
+    let shiftedCode = code + shift
+    if (shiftedCode >= 123) shiftedCode -= 26
     cipheredString += String.fromCharCode(shiftedCode)
   }
 
