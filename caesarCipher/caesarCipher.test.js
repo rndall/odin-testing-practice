@@ -8,3 +8,5 @@ test("cipher 'ab' with 2 shift factor to 'cd'", () =>
   expect(caesarCipher("ab", 2)).toBe("cd"))
 test("cipher 'xyz' with 3 shift factor to 'abc'", () =>
   expect(caesarCipher("xyz", 3)).toBe("abc"))
+test("cipher 'HeLLo' with 3 shift factor to 'KhOOr'", () =>
+  expect(caesarCipher("HeLLo", 3)).toBe("KhOOr"))
