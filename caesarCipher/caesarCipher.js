@@ -1,3 +1,5 @@
+const isAlpha = (char) => /^[a-zA-Z]+$/.test(char)
+
 const caesarCipher = (string, shift) => {
   let cipheredString = ""
 
