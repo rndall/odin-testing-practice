@@ -7,12 +7,15 @@ describe("analyzeArray", () => {
 
     expect(result.average).toBe(4)
 
-    const { average, ...withoutAverage } = result
-    expect(withoutAverage).toEqual({ min: 1, max: 8, length: 6 })
+    delete result.average
+    expect(result).toEqual({ min: 1, max: 8, length: 6 })
 
-    array = [5, 5, 9, 7, 1, 2]
+    array = [5, 5, 9, 7, 1, 2, 29]
 
     result = analyzeArray(array)
-    expect(result.average).toBeCloseTo(4.8333)
+    expect(result.average).toBeCloseTo(8.2857)
+
+    delete result.average
+    expect(result).toEqual({ min: 1, max: 29, length: 7 })
   })
 })
